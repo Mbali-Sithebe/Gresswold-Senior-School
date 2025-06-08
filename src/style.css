@@ -1,0 +1,179 @@
+/* IMPORTING FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ruluko&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Poppins, sans-serif;
+}
+
+/* ===============================  NAVIGATION BAR  =============================== */
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  background-color: #f1f8fd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6vw; /* Consistent horizontal spacing */
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.school-logo {
+  width: 85px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.school-name {
+  text-decoration: none;
+  font-size: 19px;
+  color: #d7bb00;
+  font-weight: bold;
+}
+
+.school-motto {
+  font-size: 13px;
+  color: #0c0c0c;
+  font-weight: 300;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: display end;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px; /* Create space between menu items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #d7bb00;
+  transition: color 0.3s ease-in-out;
+}
+
+#apply-btn {
+  background-color: #4096e1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#apply-btn:hover {
+  background-color: #f1f8fd;
+  color: #4096e1;
+  transition: 0.3s ease-in-out;
+}
+
+/* ===============================  HOMEPAGE SECTION  =============================== */
+
+#homepage {
+  background-image: linear-gradient(
+      rgba(64, 150, 225, 0.503),
+      rgba(200, 189, 115, 0.412)
+    ),
+    url("../images/background-img.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#homepage h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#homepage h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#homepage p {
+  width: 60%;
+  color: #f1f8fd;
+  font-size: 0.9rem;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#homepage.btn {
+  margin-top: 30px;
+}
+
+#homepage a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #ffffff;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+#homepage a.blue-btn {
+  color: #ffffff;
+  background-color: #4096e1;
+  transition: 0.3s ease-in-out;
+}
+
+#homepage a.blue-btn:hover {
+  color: #4096e1;
+  background-color: #ffffff;
+}
+
+#homepage a.yellow-btn {
+  color: #ffffff;
+  background-color: #d7bb00;
+  transition: 0.3s ease-in-out;
+}
+
+#homepage a.yellow-btn:hover {
+  color: #d7bb00;
+  background-color: #ffffff;
+}
