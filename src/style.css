@@ -566,3 +566,88 @@ html {
     font-size: 0.95rem;
   }
 }
+
+/* ===============================  STUDENT RESOURCES SECTION  =============================== */
+
+.resources-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4vh 8vw;
+  gap: 30px;
+  background: linear-gradient(135deg, #2448a0, #387aea);
+}
+
+.resources-content h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f9fafb;
+  margin-bottom: 20px;
+}
+
+.resources-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f9fafb;
+  margin-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: justify;
+}
+
+.icon-container {
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  padding-left: -50px;
+}
+
+.book-icon i {
+  font-size: 10rem;
+  color: #d7bb00;
+}
+
+.download-buttons {
+  flex: 2;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.download-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.download-item span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.download-btn {
+  background-color: #1e3ea8;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #152e81;
+}
