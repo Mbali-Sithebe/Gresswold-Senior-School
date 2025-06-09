@@ -10,6 +10,13 @@
 
 /* ===============================  NAVIGATION BAR  =============================== */
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9fafb;
+}
+
 .nav-bar {
   position: fixed;
   width: 100%;
@@ -47,10 +54,13 @@
 }
 
 .school-name {
-  text-decoration: none;
   font-size: 19px;
-  color: #d7bb00;
   font-weight: bold;
+  background: linear-gradient(90deg, #b38b00, #fcd34d, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .school-motto {
@@ -66,23 +76,46 @@
 }
 
 nav ul li {
-  margin-left: 30px; /* Create space between menu items */
+  margin-left: 30px;
 }
 
-nav ul li a {
+nav ul li a.nav-link {
   text-decoration: none;
   color: #0c0c0c;
   font-size: 16px;
   font-weight: 600;
+  position: relative;
+  padding: 5px 0;
 }
 
-nav ul li a:hover {
+/* Hover and active color change */
+nav ul li a.nav-link:hover,
+nav ul li a.nav-link.active {
   color: #d7bb00;
   transition: color 0.3s ease-in-out;
 }
 
+/* Underline effect for active and hover states */
+nav ul li a.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #d7bb00;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a.nav-link:hover::after,
+nav ul li a.nav-link.active::after {
+  width: 100%;
+}
+
+/* ---------------------------------- Apply Button ---------------------------------- */
+
 #apply-btn {
-  background-color: #4096e1;
+  background-color: #1e3ea8;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -94,8 +127,13 @@ nav ul li a:hover {
 
 #apply-btn:hover {
   background-color: #f1f8fd;
-  color: #4096e1;
+  color: #1e3ea8;
   transition: 0.3s ease-in-out;
+}
+
+/* Optional: smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 /* ===============================  HOMEPAGE SECTION  =============================== */
@@ -140,7 +178,7 @@ nav ul li a:hover {
   font-size: 0.9rem;
   line-height: 25px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #homepage.btn {
@@ -158,12 +196,12 @@ nav ul li a:hover {
 
 #homepage a.blue-btn {
   color: #ffffff;
-  background-color: #4096e1;
+  background-color: #1e3ea8;
   transition: 0.3s ease-in-out;
 }
 
 #homepage a.blue-btn:hover {
-  color: #4096e1;
+  color: #1e3ea8;
   background-color: #ffffff;
 }
 
@@ -178,7 +216,7 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
-/* ===============================  SCHOOL ACEDEMIC CURRICULUM SECTION  =============================== */
+/* ===============================  ADMISSION PAGE SECTION  =============================== */
 
 #admission {
   background-color: #f9fafb;
@@ -187,25 +225,23 @@ nav ul li a:hover {
   box-sizing: border-box;
 }
 
-/* Info Text Block */
 .info-container {
   max-width: 800px;
   margin: 0 auto 5vh auto; /* Centered + bottom spacing */
   text-align: center;
 }
 
-.info-container h1,
-.info-container h2 {
-  font-size: 2rem;
-  font-weight: 600;
+.info-container h1 {
+  font-size: 2.3rem;
+  font-weight: 650;
   color: #1e3ea8;
   margin-bottom: 10px;
 }
 
 .info-container p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Cards Section Inside Admission */
@@ -217,33 +253,31 @@ nav ul li a:hover {
 }
 
 .admission-card {
-  background-color: #ffffff; /* White card background */
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 20px 20px 20px 16px;
+  border-left: 4px solid #d7bb00; /* Yellow accent line */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: start;
 }
 
-/* Card Icon */
 .admission-card .icon i {
   font-size: 2.3rem;
-  color: #4096e1;
+  color: #d7bb00;
   margin-bottom: 15px;
 }
 
-/* Card Headings */
 .admission-card h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4096e1;
+  color: #1e3ea8;
   margin-bottom: 10px;
 }
 
-/* Card Paragraph */
 .admission-card p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  color: #0c0c0c;
+  color: #333;
 }
 
 /* ===============================  EXCELLENCE SECTION  =============================== */
@@ -293,7 +327,7 @@ nav ul li a:hover {
 
 .icons i {
   font-size: 28px;
-  color: #0c0c0cdf;
+  color: #333;
 }
 
 .counter {
@@ -312,10 +346,17 @@ nav ul li a:hover {
 /* ===============================  ABOUT PAGE SECTION  =============================== */
 
 #aboutpage {
-  width: 100%;
+  background-image: linear-gradient(
+      rgba(64, 150, 225, 0.497),
+      rgba(200, 189, 115, 0.352)
+    ),
+    url("../images/academic-staff_blur-1.png");
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-size: cover; /* Stretch image to cover the area */
+  background-position: center; /* Center the image */
 
+  width: 100%;
   padding: 5vh 8vw;
-  background-color: #f9fafb;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -328,43 +369,200 @@ nav ul li a:hover {
 }
 
 .content-container h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #0c0c0c;
+  font-size: 2.3rem;
+  font-weight: 650;
+  color: #f9fafb;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .content-container h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #4096e1;
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: #1e3ea8;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .content-container p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: #f9fafb;
   margin-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
+
+/* ===============================  SCHOOL LEADERS SECTION  =============================== */
 
 .leaders-images {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 8vw;
-  gap: 10px;
+  gap: 20px;
 }
 
 .leaders-images figure {
+  position: relative;
+  width: 280px;
   text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
-.leaders-images img {
-  width: 300px;
+.leaders-images figure p {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1e3ea8;
+}
+
+.leaders-images figure img {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 10px auto 0;
+  transition: transform 0.4s ease;
+}
+
+/* Improved hover overlay */
+.leaders-images figure::after {
+  content: attr(data-message);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(252, 211, 77, 0.705),
+    rgba(215, 186, 0, 0.511)
+  );
+  color: #f9fafb;
+  display: flex;
+  align-items: center; /* changed from flex-start to center */
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  padding: 20px;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  line-height: 1.5;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Ensure the overlay appears fully */
+.leaders-images figure:hover::after {
+  opacity: 1;
+}
+
+.leaders-images figure:hover img {
+  transform: scale(1.05);
 }
 
 /* ===============================  SCHOOL ACEDEMIC CURRICULUM SECTION  =============================== */
+
+/* === Curriculum Section Styles === */
+#curriculum {
+  background-color: #f9fafb;
+  padding: 5vh 8vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#curriculum h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3ea8;
+  margin-bottom: 10px;
+}
+
+#curriculum p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 4vh auto;
+}
+
+.curriculum-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.curriculum-card {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.card-face.face1 {
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.card-face.face2 {
+  background-color: #ffffff;
+  transform: translateY(100%);
+  z-index: 2;
+  text-align: left;
+}
+
+.curriculum-card:hover .card-face.face1 {
+  transform: translateY(-100%);
+  cursor: pointer;
+}
+
+.curriculum-card:hover .card-face.face2 {
+  transform: translateY(0);
+}
+
+.card-face.face2 h3 {
+  font-size: 1.6rem;
+  color: #1e3ea8;
+  margin-bottom: 10px;
+}
+
+.card-face.face2 p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .curriculum-card {
+    height: 360px;
+  }
+  .card-face.face2 h3 {
+    font-size: 1.4rem;
+  }
+  .card-face.face2 p {
+    font-size: 0.95rem;
+  }
+}

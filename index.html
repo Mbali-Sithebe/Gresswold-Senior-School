@@ -17,7 +17,7 @@
     <!-- Referencing CSS File -->
     <link rel="stylesheet" href="./src/style.css" />
 
-    <!-- Website Skelleton -->
+    <!---------------------------------------------- Website Skelleton ------------------------------------------------->
   </head>
   <body>
     <!-- ------------------------------------------- Creating Navigation Bar ------------------------------------------->
@@ -40,22 +40,22 @@
           <!-- Navigation Links -->
           <ul class="nav-menu">
             <!-- Home Page -->
-            <li><a class="active" href="#">Home</a></li>
+            <li><a class="nav-link active" href="#home">Home</a></li>
 
             <!-- Admission Page -->
-            <li><a href="#">Admissions</a></li>
+            <li><a class="nav-link" href="#admissions">Admissions</a></li>
 
             <!-- Academic Staff Page -->
-            <li><a href="#">Academic Staff</a></li>
+            <li><a class="nav-link" href="#staff">Academic Staff</a></li>
 
             <!-- Curriculum Page -->
-            <li><a href="#">Curriculum</a></li>
+            <li><a class="nav-link" href="#curriculum">Curriculum</a></li>
 
             <!-- Student Life Page -->
-            <li><a href="#">Resources</a></li>
+            <li><a class="nav-link" href="#resources">Resources</a></li>
 
             <!-- Contact Us Page -->
-            <li><a href="#">Contact Us</a></li>
+            <li><a class="nav-link" href="#contact">Contact Us</a></li>
           </ul>
 
           <!-- Application Button -->
@@ -90,15 +90,15 @@
 
     <section id="admission">
       <div class="info-container">
-        <h1>School Admissions</h1>
-        <h2>About Gresswold Senior School</h2>
+        <h1>Gresswold School Admissions</h1>
+
         <p>
-          At Gresswold Senior School, our curriculum is tailored to support
-          learners with Mild Intellectual Disability (MID). We maintain small
-          class sizes of 10–12 to ensure individualized learning experiences.
-          Our 44 dedicated educators use structured teaching strategies that
-          focus on essential life skills, promoting both independence and
-          lifelong learning.
+          Welcome! At Gresswold Senior School, our curriculum is tailored to
+          support learners with Mild Intellectual Disability (MID). We maintain
+          small class sizes of 10–12 to ensure individualized learning
+          experiences. Our 44 dedicated educators use structured teaching
+          strategies that focus on essential life skills, promoting both
+          independence and lifelong learning.
         </p>
       </div>
 
@@ -222,21 +222,78 @@
       </main>
 
       <div class="leaders-images">
-        <figure class="principal">
-          <strong> <p>Our Principal: Ms Shongwe</p> </strong>
-
+        <figure
+          class="principal"
+          data-message="Hello there! I am Ms Shongwe, the proud principal of our school. Welcome to a place where learning and growth go hand in hand."
+        >
+          <strong><p>Our Principal: Ms Shongwe</p></strong>
           <img src="./images/principal-.jpg" alt="Principal Image" />
         </figure>
 
-        <figure class="deputy-principal">
-          <strong> <p>Our Deputy Principal: Ms Sibeko</p> </strong>
+        <figure
+          class="deputy-principal"
+          data-message="Hi, I’m Ms Sibeko, the Deputy Principal. We're excited to have you join our academic family."
+        >
+          <strong><p>Our Deputy Principal: Ms Sibeko</p></strong>
           <img src="./images/deputy-.jpg" alt="Deputy Principal Image" />
         </figure>
       </div>
     </section>
 
     <!--------------------------------------------------- Curriculum Page Section ---------------------------------------------->
-    <!-- Refrencing Javascript -->
+
+    <section id="curriculum">
+      <h1>Curriculum Overview</h1>
+      <p>
+        Our curriculum is designed to provide a well-rounded education that
+        prepares students for success in life. We offer a range of subjects and
+        extracurricular activities that cater to the diverse interests and
+        abilities of our learners.
+      </p>
+
+      <div class="curriculum-cards-container">
+        <!-- Card 1 -->
+        <div class="curriculum-card">
+          <div
+            class="card-face face1"
+            style="background-image: url('./images/academic-staff.jpg')"
+          ></div>
+          <div class="card-face face2">
+            <h3>Core Subjects</h3>
+            <p>English, Mathematics, Science, and Social Studies.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="curriculum-card">
+          <div
+            class="card-face face1"
+            style="background-image: url('./images/art\ and\ culture-1.jpg')"
+          ></div>
+          <div class="card-face face2">
+            <h3>Arts and Culture</h3>
+            <p>Drama, Music and Arts and Culture Programs.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="curriculum-card">
+          <div
+            class="card-face face1"
+            style="background-image: url('./images/sport-1.jpg')"
+          ></div>
+          <div class="card-face face2">
+            <h3>Sports & Athletics</h3>
+            <p>
+              We offer various sports such as netball, football, and basketball
+              to support fitness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Place your script tag here, after the section -->
     <script src="./src/app.js"></script>
   </body>
 </html>

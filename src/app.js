@@ -23,3 +23,5 @@ counters.forEach((counter) => {
 
   animate();
 });
+
+/////////////////////////////////// SCROLL TO TOP BUTTON FUNCTION ////////////////////////////////////
