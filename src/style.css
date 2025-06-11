@@ -56,7 +56,7 @@ body {
 .school-name {
   font-size: 19px;
   font-weight: bold;
-  background: linear-gradient(90deg, #b38b00, #fcd34d, #ffd700);
+  background: linear-gradient(180deg, #b38b00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -119,7 +119,7 @@ nav ul li a.nav-link.active::after {
   color: #ffffff;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
@@ -207,13 +207,13 @@ html {
 
 #homepage a.yellow-btn {
   color: #ffffff;
-  background-color: #d7bb00;
-  transition: 0.3s ease-in-out;
+  background: linear-gradient(135deg, #d7bb00, #f1d74c);
+  transition: all 0.3s ease-in-out;
 }
 
 #homepage a.yellow-btn:hover {
   color: #d7bb00;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
 }
 
 /* ===============================  ADMISSION PAGE SECTION  =============================== */
@@ -232,7 +232,7 @@ html {
 }
 
 .info-container h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 650;
   color: #1e3ea8;
   margin-bottom: 10px;
@@ -255,7 +255,9 @@ html {
 .admission-card {
   background-color: #ffffff;
   padding: 20px 20px 20px 16px;
-  border-left: 4px solid #d7bb00; /* Yellow accent line */
+  border-left: 4px solid transparent; /* Changed to transparent */
+  border-image: linear-gradient(135deg, #d7bb00, #f1d74c); /* Gradient border */
+  border-image-slice: 1;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: start;
@@ -263,7 +265,11 @@ html {
 
 .admission-card .icon i {
   font-size: 2.3rem;
-  color: #d7bb00;
+  background: linear-gradient(135deg, #d7bb00, #f1d74c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   margin-bottom: 15px;
 }
 
@@ -317,12 +323,13 @@ html {
 .icons {
   width: 90px;
   height: 90px;
-  background-color: #d7bb00;
+  background: linear-gradient(135deg, #d7bb00, #f1d74c);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth */
 }
 
 .icons i {
@@ -369,16 +376,17 @@ html {
 }
 
 .content-container h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 650;
   color: #f9fafb;
   margin-bottom: 10px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .content-container h2 {
   font-size: 1.5rem;
-  font-weight: 550;
+  font-weight: 650;
   color: #1e3ea8;
   margin-bottom: 20px;
   text-align: center;
@@ -391,6 +399,7 @@ html {
   margin-bottom: 60px;
   margin-left: 100px;
   margin-right: 100px;
+  text-align: center;
 }
 
 /* ===============================  SCHOOL LEADERS SECTION  =============================== */
@@ -436,12 +445,13 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  color: #333;
+  background: #1e3ea8;
+  color: #f1f8fd;
   display: flex;
-  align-items: center; /* changed from flex-start to center */
+  align-items: center;
   justify-content: flex-start;
   font-size: 0.9rem;
+  font-weight: 500;
   padding: 20px;
   text-align: left;
   opacity: 0;
@@ -472,10 +482,11 @@ html {
 }
 
 #curriculum h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #1e3ea8;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 #curriculum p {
@@ -484,6 +495,7 @@ html {
   line-height: 1.5;
   max-width: 800px;
   margin: 0 auto 4vh auto;
+  margin-bottom: 60px;
 }
 
 .curriculum-cards-container {
@@ -497,7 +509,7 @@ html {
   position: relative;
   width: 100%;
   max-width: 350px;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15);
@@ -541,15 +553,38 @@ html {
 }
 
 .card-face.face2 h3 {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   color: #1e3ea8;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+}
+
+/* Style for all lists in the cards */
+.card-face.face2 ul {
+  font-size: 0.9rem;
+  color: #333;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem 0;
+  text-align: left;
+}
+
+/* List items styling */
+.card-face.face2 li {
+  margin-bottom: 0;
+  position: relative;
+  left: 10px;
+}
+
+.card-face.face2 ul {
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 .card-face.face2 p {
   font-size: 1rem;
   color: #333;
   line-height: 1.4;
+  text-align: center;
+  margin: 0.5rem 0 1rem 0;
 }
 
 @media (max-width: 768px) {
@@ -580,10 +615,11 @@ html {
 .resources-content h1 {
   width: 100%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #f9fafb;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .resources-content p {
@@ -608,7 +644,11 @@ html {
 
 .book-icon i {
   font-size: 10rem;
-  color: #d7bb00;
+  background: linear-gradient(135deg, #d7bb00, #f1d74c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Needed for gradient to apply correctly */
 }
 
 .download-buttons {
@@ -667,10 +707,11 @@ html {
 .contactUs h1 {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #f9fafb;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 #contact-form {
@@ -703,13 +744,7 @@ html {
 
 .info {
   grid-area: info;
-  background: radial-gradient(
-    circle at 48.7% 44.3%,
-    rgb(30, 144, 231) 0%,
-    rgb(56, 113, 209) 22.9%,
-    rgb(38, 76, 140) 76.7%,
-    rgb(31, 63, 116) 100.2%
-  );
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 .map {
@@ -806,13 +841,13 @@ html {
 .iconBox span p {
   margin: 0;
   line-height: 1.5;
-  color: #f1f8fd;
+  color: #333;
 }
 
 .info .infoBox i {
   min-width: 40px;
   height: 40px;
-  color: #f1f8fd;
+  color: #f9fafb;
   background: #1e3ea8;
   display: flex;
   justify-content: center;
@@ -829,6 +864,7 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .map iframe {
