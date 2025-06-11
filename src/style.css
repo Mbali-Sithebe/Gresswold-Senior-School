@@ -253,12 +253,11 @@ html {
 }
 
 .admission-card {
-  background-color: #ffffff;
-  padding: 20px 20px 20px 16px;
-  border-left: 4px solid transparent; /* Changed to transparent */
-  border-image: linear-gradient(135deg, #d7bb00, #f1d74c); /* Gradient border */
-  border-image-slice: 1;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #d7bb00, #f1d74c) border-box;
+  border-left: 4px solid transparent;
   border-radius: 10px;
+  padding: 20px 20px 20px 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: start;
 }
