@@ -444,8 +444,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1e3ea8;
-  color: #f1f8fd;
+  background:  #e7eaf0;
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -607,7 +607,7 @@ html {
   align-items: flex-start;
   padding: 4vh 8vw;
   gap: 30px;
-  background: #1e3ea8;
+  background: #e7eaf0;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -616,7 +616,7 @@ html {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #1e3ea8;
   margin-bottom: 20px;
   margin-top: 30px;
 }
@@ -624,7 +624,7 @@ html {
 .resources-content p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #f9fafb;
+  color: #333;
   margin-bottom: 60px;
   margin-left: 100px;
   margin-right: 100px;
@@ -701,6 +701,7 @@ html {
 
   padding: 5vh 8vw;
   box-sizing: border-box;
+  padding-bottom: 130px;
 }
 
 .contactUs h1 {
@@ -874,3 +875,80 @@ html {
 }
 
 /* ===============================  FOOTER SECTION  =============================== */
+
+.footer {
+  width: 100%;
+  padding: 30px 10%;
+  background: #1e3ea8;
+  color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.footer div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Heading styles */
+.footer div h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraph styles */
+.footer div p {
+  line-height: 1.6;
+}
+
+/* List styles */
+.footer div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer div ul li {
+  margin-bottom: 8px;
+}
+
+/* Link styles */
+.footer div a {
+  text-decoration: none;
+  color: #f9fafb;
+}
+
+.footer div a:hover {
+  color: #d7bb00;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Button styles */
+.footer div button {
+  width: 200px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  background: #f9fafb;
+  color: #333;
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.footer div button:hover {
+  background: #d7bb00;
+  color: #f9fafb;
+  transition: all 0.3s ease-in-out;
+}
+
+div i {
+  color: #d7bb00;
+}
