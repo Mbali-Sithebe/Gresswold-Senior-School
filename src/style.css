@@ -8,14 +8,18 @@
   font-family: Poppins, sans-serif;
 }
 
-/* ===============================  NAVIGATION BAR  =============================== */
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f9fafb;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===============================  NAVIGATION BAR  =============================== */
 
 .nav-bar {
   position: fixed;
@@ -138,7 +142,7 @@ html {
 
 /* ===============================  HOMEPAGE SECTION  =============================== */
 
-#homepage {
+#home {
   background-image: linear-gradient(
       rgba(64, 150, 225, 0.332),
       rgba(200, 189, 115, 0.263)
@@ -156,7 +160,7 @@ html {
   padding-top: 40px;
 }
 
-#homepage h1 {
+#home h1 {
   font-size: 2.6rem;
   font-weight: 600;
   color: #ffffff;
@@ -164,7 +168,7 @@ html {
   margin-bottom: 20px;
 }
 
-#homepage h2 {
+#home h2 {
   font-size: 1.5rem;
   color: #ffffff;
   letter-spacing: 1px;
@@ -172,7 +176,7 @@ html {
   margin-bottom: 20px;
 }
 
-#homepage p {
+#home p {
   width: 60%;
   color: #f1f8fd;
   font-size: 0.9rem;
@@ -181,11 +185,11 @@ html {
   margin-bottom: 40px;
 }
 
-#homepage.btn {
+#home.btn {
   margin-top: 30px;
 }
 
-#homepage a {
+#home a {
   text-decoration: none;
   font-size: 0.9rem;
   padding: 13px 35px;
@@ -194,35 +198,36 @@ html {
   border-radius: 6px;
 }
 
-#homepage a.blue-btn {
+#home a.blue-btn {
   color: #ffffff;
   background-color: #1e3ea8;
   transition: 0.3s ease-in-out;
 }
 
-#homepage a.blue-btn:hover {
+#home a.blue-btn:hover {
   color: #1e3ea8;
   background-color: #ffffff;
 }
 
-#homepage a.yellow-btn {
+#home a.yellow-btn {
   color: #ffffff;
   background: linear-gradient(135deg, #d7bb00, #f1d74c);
   transition: all 0.3s ease-in-out;
 }
 
-#homepage a.yellow-btn:hover {
+#home a.yellow-btn:hover {
   color: #d7bb00;
   background: linear-gradient(135deg, #ffffff, #f8f8f8);
 }
 
 /* ===============================  ADMISSION PAGE SECTION  =============================== */
 
-#admission {
+#admissions {
   background-color: #f9fafb;
   margin: 5vh 0; /* Vertical spacing top and bottom */
   padding: 5vh 8vw;
   box-sizing: border-box;
+  margin-bottom: 28px;
 }
 
 .info-container {
@@ -242,6 +247,7 @@ html {
   font-size: 1rem;
   color: #333;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* Cards Section Inside Admission */
@@ -250,6 +256,7 @@ html {
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4vh;
+  margin-bottom: -25px;
 }
 
 .admission-card {
@@ -285,9 +292,9 @@ html {
   color: #333;
 }
 
-/* ===============================  EXCELLENCE SECTION  =============================== */
+/* ===============================  STAFF SECTION  =============================== */
 
-#excellence {
+#staff {
   background: linear-gradient(135deg, #2448a0, #387aea);
   border-radius: 20px;
   padding: 50px 20px;
@@ -301,17 +308,17 @@ html {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-#excellence ul {
+#staff ul {
   list-style: none;
   padding: 0;
   margin: 0;
   color: #ffffff;
 }
 
-#excellence .students,
-#excellence .educators,
-#excellence .pass-rate,
-#excellence .years-experience {
+#staff .students,
+#staff .educators,
+#staff .pass-rate,
+#staff .years-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,7 +349,7 @@ html {
   color: #ffffff;
 }
 
-#excellence p {
+#staff p {
   margin-top: 5px;
   font-size: 16px;
   font-weight: 300;
@@ -444,7 +451,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background:  #e7eaf0;
+  background: #e7eaf0;
   color: #333;
   display: flex;
   align-items: center;
@@ -478,6 +485,7 @@ html {
   padding: 5vh 8vw;
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #curriculum h1 {
@@ -600,7 +608,7 @@ html {
 
 /* ===============================  STUDENT RESOURCES SECTION  =============================== */
 
-.resources-content {
+.resources {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -611,7 +619,7 @@ html {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.resources-content h1 {
+.resources h1 {
   width: 100%;
   text-align: center;
   font-size: 2rem;
@@ -621,7 +629,7 @@ html {
   margin-top: 30px;
 }
 
-.resources-content p {
+.resources p {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
@@ -692,7 +700,7 @@ html {
 
 /* ===============================  CONTACT US SECTION  =============================== */
 
-#contact-container {
+#contact {
   background-image: linear-gradient(
       rgba(64, 150, 225, 0.497),
       rgba(200, 189, 115, 0.352)
