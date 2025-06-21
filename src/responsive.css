@@ -171,55 +171,54 @@
 
   /*========= EXCELLENCE PAGE  ==========*/
 
-  #staff p {
+  #excellence-page p {
     font-size: 0.8rem;
   }
 
-  .counter {
+  #excellence-page .counter {
     font-size: 1.1rem;
     font-weight: 700;
   }
 
-  .icons i {
+  #excellence-page .icons i {
     font-size: 1.3rem;
   }
 
-  .icons {
+  #excellence-page .icons {
     width: 63px;
     height: 63px;
   }
 
-  #staff {
+  #excellence-page {
     padding: 3vh 6vw;
     max-width: 600px;
-  }
-
-  #staff {
+    display: flex;
     flex-wrap: nowrap; /* Force all items in one row */
-    overflow-x: auto; /* Allow horizontal scroll on small screens */
-    gap: 20px; /* Less gap on mobile */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Reduce spacing */
   }
 
-  #staff .students,
-  #staff .educators,
-  #staff .pass-rate,
-  #staff .years-experience {
+  /* Adjust individual boxes */
+  #excellence-page .students,
+  #excellence-page .educators,
+  #excellence-page .pass-rate,
+  #excellence-page .years-experience {
     flex: 0 0 auto; /* Prevent shrinking */
-    min-width: 130px; /* Set a smaller width to fit mobile */
+    min-width: 130px; /* Force narrower cards for mobile */
   }
 
   /*========= ABOUT PAGE  ==========*/
-  .content-container h1 {
+  #staff .content-container h1 {
     font-size: 1.6rem;
     margin-top: 10px;
   }
 
-  .content-container h2 {
+  #staff .content-container h2 {
     font-size: 1.1rem;
     margin-bottom: 15px;
   }
 
-  .content-container p {
+  #staff .content-container p {
     font-size: 0.8rem;
     margin-left: 20px;
     margin-right: 20px;
@@ -227,15 +226,15 @@
     margin-bottom: 40px;
   }
 
-  .leaders-images figure p {
+  #staff .leaders-images figure p {
     font-size: 0.8rem;
   }
 
-  .leaders-images figure {
+  #staff .leaders-images figure {
     width: 195px;
   }
 
-  .leaders-images figure::after {
+  #staff .leaders-images figure::after {
     font-size: 0.7rem;
   }
 
