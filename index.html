@@ -14,6 +14,13 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Installing JQuery Link for Hamburger -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Referencing CSS File -->
     <link rel="stylesheet" href="./src/style.css" />
 
@@ -42,6 +49,9 @@
 
           <!-- Navigation Links -->
           <ul class="nav-menu">
+            <!-- Close Icon for Mobile Navigation -->
+            <i id="menu-close" class="fa-solid fa-xmark"></i>
+
             <!-- Home Page -->
             <li><a class="nav-link" href="#home">Home</a></li>
 
@@ -61,8 +71,15 @@
             <li><a class="nav-link" href="#contact">Contact Us</a></li>
           </ul>
 
-          <!-- Application Button -->
-          <button id="apply-btn">Applications</button>
+          <!-- Hamburger Menu Icon -->
+          <div class="hamburger-menu">
+            <i id="menu-open" class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="nav-button">
+            <!-- Application Button -->
+            <button id="apply-btn">Applications</button>
+          </div>
         </div>
       </nav>
     </header>

@@ -13,6 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f9fafb;
+  overflow-x: hidden;
 }
 
 html {
@@ -23,17 +24,33 @@ html {
 
 .nav-bar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #f9fafb;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
   z-index: 999;
 }
 
+.nav-bar .nav-container {
+  display: flex;
+}
+
+#menu-open {
+  display: none;
+  cursor: pointer;
+}
+
+#menu-close {
+  display: none;
+  cursor: pointer;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 6vw; /* Consistent horizontal spacing */
+  padding: 8px 6vw;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -67,13 +84,8 @@ html {
   color: transparent;
 }
 
-.school-motto {
-  font-size: 13px;
-  color: #0c0c0c;
-  font-weight: 300;
-}
-
 .nav-menu {
+  position: relative;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -127,6 +139,7 @@ nav ul li a.nav-link.active::after {
   font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
+  display: inline-block;
 }
 
 #apply-btn:hover {

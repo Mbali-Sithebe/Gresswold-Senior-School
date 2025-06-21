@@ -35,9 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/////////////////////////////////// SCROLL TO TOP BUTTON FUNCTION ////////////////////////////////////
+/////////////////////////////////// HAMBURGURE BUTTON FUNCTION ////////////////////////////////////
 
-// Wait until the DOM is fully loaded [This is not working in the current context]
+// OPEM MENU ON CLICK
+$("#menu-open").click(function () {
+  $(".nav-menu").addClass("active");
+});
+// CLOSE MENU ON CLICK
+$("#menu-close").click(function () {
+  $(".nav-menu").removeClass("active");
+});
+
+// ACTIVE LINK ON SCROLL
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-menu a");
@@ -47,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach((section) => {
       const sectionHeight = section.offsetHeight;
+      const sectionTop = section.offsetTop - 80; // Add this line!
       const sectionId = section.getAttribute("id");
 
       if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
