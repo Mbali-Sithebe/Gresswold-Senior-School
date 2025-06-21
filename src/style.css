@@ -307,7 +307,7 @@ html {
 
 /* ===============================  Excellence SECTION  =============================== */
 
-#staff {
+#excellence-page {
   background: linear-gradient(135deg, #2448a0, #387aea);
   border-radius: 20px;
   padding: 50px 20px;
@@ -321,17 +321,17 @@ html {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-#staff ul {
+#excellence-page ul {
   list-style: none;
   padding: 0;
   margin: 0;
   color: #ffffff;
 }
 
-#staff .students,
-#staff .educators,
-#staff .pass-rate,
-#staff .years-experience {
+#excellence-page .students,
+#excellence-page .educators,
+#excellence-page .pass-rate,
+#excellence-page .years-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -371,7 +371,7 @@ html {
 
 /* ===============================  ABOUT PAGE SECTION  =============================== */
 
-#aboutpage {
+#staff {
   background-image: linear-gradient(
       rgba(64, 150, 225, 0.497),
       rgba(200, 189, 115, 0.352)
@@ -606,7 +606,6 @@ html {
   text-align: center;
   margin: 0.5rem 0 1rem 0;
 }
-
 
 /* ===============================  STUDENT RESOURCES SECTION  =============================== */
 
