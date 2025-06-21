@@ -305,7 +305,7 @@ html {
   color: #333;
 }
 
-/* ===============================  STAFF SECTION  =============================== */
+/* ===============================  Excellence SECTION  =============================== */
 
 #staff {
   background: linear-gradient(135deg, #2448a0, #387aea);
@@ -451,7 +451,7 @@ html {
 
 .leaders-images figure img {
   width: 100%;
-  height: auto;
+  height: 50% !important;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -607,17 +607,6 @@ html {
   margin: 0.5rem 0 1rem 0;
 }
 
-@media (max-width: 768px) {
-  .curriculum-card {
-    height: 360px;
-  }
-  .card-face.face2 h3 {
-    font-size: 1.4rem;
-  }
-  .card-face.face2 p {
-    font-size: 0.95rem;
-  }
-}
 
 /* ===============================  STUDENT RESOURCES SECTION  =============================== */
 
@@ -649,7 +638,7 @@ html {
   margin-bottom: 60px;
   margin-left: 100px;
   margin-right: 100px;
-  text-align: justify;
+  text-align: center;
 }
 
 .icon-container {
