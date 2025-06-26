@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach((section) => {
       const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 80; // Add this line!
+      const sectionTop = section.offsetTop - 80;
       const sectionId = section.getAttribute("id");
 
       if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
@@ -69,4 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
 });
