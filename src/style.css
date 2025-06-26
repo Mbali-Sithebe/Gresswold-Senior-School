@@ -104,14 +104,12 @@ nav ul li a.nav-link {
   padding: 5px 0;
 }
 
-/* Hover and active color change */
 nav ul li a.nav-link:hover,
 nav ul li a.nav-link.active {
   color: #d7bb00;
   transition: color 0.3s ease-in-out;
 }
 
-/* Underline effect for active and hover states */
 nav ul li a.nav-link::after {
   content: "";
   position: absolute;
@@ -146,11 +144,6 @@ nav ul li a.nav-link.active::after {
   background-color: #f1f8fd;
   color: #1e3ea8;
   transition: 0.3s ease-in-out;
-}
-
-/* Optional: smooth scroll */
-html {
-  scroll-behavior: smooth;
 }
 
 /* ===============================  HOMEPAGE SECTION  =============================== */
@@ -237,7 +230,7 @@ html {
 
 #admissions {
   background-color: #f9fafb;
-  margin: 5vh 0; /* Vertical spacing top and bottom */
+  margin: 5vh 0;
   padding: 5vh 8vw;
   box-sizing: border-box;
   margin-bottom: 28px;
@@ -245,7 +238,7 @@ html {
 
 .info-container {
   max-width: 800px;
-  margin: 0 auto 5vh auto; /* Centered + bottom spacing */
+  margin: 0 auto 5vh auto;
   text-align: center;
 }
 
@@ -312,10 +305,10 @@ html {
   border-radius: 20px;
   padding: 50px 20px;
   max-width: 1200px;
-  margin: 60px auto; /* centers section horizontally */
+  margin: 60px auto;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* handles responsiveness */
+  flex-wrap: wrap;
   gap: 40px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -335,7 +328,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 200px; /* responsive card width */
+  flex: 1 1 200px;
   min-width: 180px;
 }
 
@@ -348,7 +341,7 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .icons i {
@@ -456,14 +449,13 @@ html {
   transition: transform 0.4s ease;
 }
 
-/* Improved hover overlay */
 .leaders-images figure::after {
   content: attr(data-message);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30%; /* Only cover bottom half */
+  height: 30%;
   background: #e7eaf0;
   color: #333;
   display: flex;
@@ -477,16 +469,14 @@ html {
   transition: opacity 0.4s ease, transform 0.4s ease;
   z-index: 2;
   box-sizing: border-box;
-  transform: translateY(100%); /* Start hidden below */
+  transform: translateY(100%);
 }
 
-/* Slide it up on hover */
 .leaders-images figure:hover::after {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Ensure the overlay appears fully */
 .leaders-images figure:hover::after {
   opacity: 1;
 }
@@ -497,7 +487,6 @@ html {
 
 /* ===============================  SCHOOL ACEDEMIC CURRICULUM SECTION  =============================== */
 
-/* === Curriculum Section Styles === */
 #curriculum {
   background-color: #f9fafb;
   padding: 5vh 8vw;
@@ -583,7 +572,6 @@ html {
   margin-bottom: 1px;
 }
 
-/* Style for all lists in the cards */
 .card-face.face2 ul {
   font-size: 0.9rem;
   color: #333;
@@ -592,7 +580,6 @@ html {
   text-align: left;
 }
 
-/* List items styling */
 .card-face.face2 li {
   margin-bottom: 0;
   position: relative;
@@ -661,7 +648,7 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block; /* Needed for gradient to apply correctly */
+  display: inline-block;
 }
 
 .download-buttons {
@@ -733,7 +720,6 @@ html {
   margin-bottom: 20px;
 }
 
-
 /* Grid container */
 #contact-form {
   display: grid;
@@ -749,10 +735,9 @@ html {
 .contact.form,
 .contact.info,
 .contact.map {
-  border-radius: 6px; 
-  overflow: hidden;    
+  border-radius: 6px;
+  overflow: hidden;
 }
-
 
 .contact.form {
   grid-area: form;
@@ -777,28 +762,24 @@ html {
   cursor: pointer;
 }
 
-
 .formBox {
   width: 100%;
   margin-top: 1.5rem;
 }
-
 
 .row50 {
   display: flex;
   gap: 20px;
 }
 
-
 .row100 {
   width: 100%;
 }
 
-
 .inputBox {
   display: flex;
   flex-direction: column;
-  flex: 1; 
+  flex: 1;
   margin-bottom: 15px;
 }
 
@@ -808,7 +789,6 @@ html {
   font-weight: 600;
 }
 
-/* Inputs and textarea */
 .inputBox input,
 .inputBox textarea {
   padding: 10px;
@@ -979,19 +959,4 @@ html {
 
 .footer .col-3 {
   margin-right: 60px;
-}
-
-/* Responsive stacking for small screens */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    padding: 40px 5vw;
-    gap: 30px;
-  }
-
-  .footer .col-1,
-  .footer .col-2,
-  .footer .col-3 {
-    margin-left: 0;
-  }
 }
