@@ -81,7 +81,3 @@ document.querySelectorAll(".curriculum-card").forEach((card) => {
     // else do nothing on small screens
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  AOS.init();
-});
