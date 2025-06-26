@@ -32,8 +32,16 @@
   }
 
   .school-name {
+    /* Keep font size and weight */
     font-size: 15px !important;
     line-height: 1.2;
+
+    /* Add a solid fallback color underneath the gradient */
+    color: #b38b00 !important;
+
+    /* Remove transparent fill for better visibility */
+    -webkit-text-fill-color: initial !important;
+    color: #b38b00 !important;
   }
 
   #menu-open {
@@ -338,13 +346,93 @@
 
   /*========= CONTACT INFO  ==========*/
 
+  #contact {
+    padding: 2vh 2vw;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    height: 95vh;
+  }
+
+  #contact-form {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "form info"
+      "form map";
+    gap: 7px;
+  }
+
+  .contactUs h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  #contact-form h3 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .contact.form {
+    grid-area: form;
+    padding: 3px 8px;
+    width: 80%;
+  }
+
+  .formBox {
+    width: 78%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 30px;
+  }
+
+  .row50,
+  .row100 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 0;
+  }
+
+  .formBox .inputBox input,
+  .formBox .inputBox textarea {
+    font-size: 0.72rem;
+    padding: 2px 4px;
+  }
+
+  .formBox .inputBox label {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+  }
+
+  .row100 textarea {
+    min-height: 80px;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  #message {
+    height: 20px !important;
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+
+  /*========= CONTACT INFO  ==========*/
   .contact.info {
     grid-area: info;
     width: 100%;
     height: 170px;
     padding: 20px;
     font-size: 0.75rem;
-    margin-left: -75px;
+    margin-left: -55px;
+    background: red;
   }
 
   .contact.info h3 {
