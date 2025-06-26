@@ -97,7 +97,7 @@
   /*========= HOMEPAGE  ==========*/
   #home {
     width: 100%;
-    height: 97vh;
+    height: 65vh;
     background-size: cover;
     background-position: center;
     padding-top: 0px;
@@ -215,7 +215,7 @@
   #staff {
     padding: 3vh 6vw;
     max-width: 100%;
-    height: 100vh;
+    height: 65vh;
   }
 
   #staff .content-container h1 {
@@ -253,7 +253,7 @@
   #curriculum {
     padding: 4vh 4vw;
     margin-bottom: 10px;
-    height: 100vh;
+    height: 65vh;
   }
 
   #curriculum h1 {
@@ -301,7 +301,7 @@
 
   .resources {
     padding: 4vh 5vw;
-    height: 80vh;
+    height: 50vh;
   }
 
   .resources h1 {
@@ -346,7 +346,7 @@
     box-sizing: border-box;
     padding-bottom: 50px;
     padding-right: 5px;
-    height: 123vh;
+    height: 80vh;
   }
 
   #contact-form {
@@ -520,7 +520,7 @@
   .resources {
     padding: 4vh 5vw;
     height: auto;
-    min-height: 85vh;
+    min-height: 65vh;
   }
 
   .resources h1 {
