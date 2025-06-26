@@ -511,3 +511,56 @@
     margin-bottom: 2px;
   }
 }
+
+/* ===============================  SECOND BREAKPOINT  =============================== */
+
+@media screen and (max-width: 422px) {
+  /*========= STUDENT RESOURCES PAGE  ==========*/
+
+  .resources {
+    padding: 4vh 5vw;
+    height: auto;
+    min-height: 85vh;
+  }
+
+  .resources h1 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .resources p {
+    margin-top: -30px;
+    font-size: 0.69rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 15px;
+    margin-bottom: 0px;
+  }
+
+  .book-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+  }
+
+  .book-icon i {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .download-item span {
+    font-size: 0.69rem;
+  }
+
+  .download-btn {
+    padding: 5px 12px;
+    font-weight: 500;
+    font-size: 0.69rem;
+  }
+
+  .download-buttons {
+    margin-top: -10px;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+}
