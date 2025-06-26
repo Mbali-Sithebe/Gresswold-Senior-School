@@ -27,7 +27,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
 
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="./src/style.css" />
@@ -396,27 +395,25 @@
 
     <!--------------------------------------------------- Contact Us Page Section ---------------------------------------------->
     <section id="contact">
-      <!-- Intro Code -->
+      <!-- Intro -->
       <div class="contactUs">
         <h1>Get In Touch With Us</h1>
       </div>
 
       <!-- Contact Form -->
       <form id="contact-form">
-        <!-- Input Fields -->
-        <div class="contact form">
+        <!-- Message Form -->
+        <section class="contact form">
           <h3 class="contact-title">Send a Message</h3>
 
-          <!-- The Form -->
           <div class="formBox">
             <div class="row50">
-              <!-- Names -->
               <div class="inputBox">
                 <label for="first-name">First Name</label>
                 <input
                   type="text"
                   id="first-name"
-                  placeholder="type here..."
+                  placeholder="Type here..."
                   required
                 />
               </div>
@@ -425,14 +422,13 @@
                 <input
                   type="text"
                   id="last-name"
-                  placeholder="type here..."
+                  placeholder="Type here..."
                   required
                 />
               </div>
             </div>
 
             <div class="row50">
-              <!-- Email and Mobile -->
               <div class="inputBox">
                 <label for="email">Email</label>
                 <input
@@ -442,7 +438,6 @@
                   required
                 />
               </div>
-
               <div class="inputBox">
                 <label for="mobile">Mobile Number</label>
                 <input
@@ -455,73 +450,88 @@
             </div>
 
             <div class="row100">
-              <!-- Message -->
               <div class="inputBox">
                 <label for="message">Message</label>
-                <textarea placeholder="Write your message here..."></textarea>
+                <textarea
+                  id="message"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
               </div>
             </div>
 
             <div class="row100">
-              <!-- Send Button -->
               <div class="inputBox">
                 <input type="submit" value="Send" />
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Information Box -->
-        <div class="contact info">
+        <!-- Contact Info -->
+        <section class="contact info">
           <h3>Contact Information</h3>
-
           <div class="contact-wrapper">
             <div class="infoBox">
-              <!-- School Address -->
               <div class="iconBox">
                 <i class="fa-solid fa-location-dot"></i>
-                <span>
-                  <p>
-                    22 Hathaway Road <br />
-                    Gresswold, Johannesburg <br />
-                    2018
-                  </p>
-                </span>
+                <p>
+                  22 Hathaway Road, Gresswold <br />
+                  Johannesburg, 2018 <br />
+                </p>
               </div>
 
-              <!-- School Contact Numbers -->
               <div class="iconBox">
                 <i class="fa-solid fa-phone"></i>
-                <span><p>011 786 8123/4</p></span>
+                <p>011 786 8123/4</p>
               </div>
 
-              <!-- School Email Address -->
               <div class="iconBox">
                 <i class="fa-solid fa-envelope"></i>
-                <span><p>admin@greswoldschool.co.za</p></span>
+                <p>admin@greswoldschool.co.za</p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Map -->
-        <div class="contact map">
+        <section class="contact map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1684.7110795983676!2d28.087068198090595!3d-26.133823042038465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d6d685d510b%3A0x8660f8fcfbd75062!2sGresswold%20Senior%20School!5e0!3m2!1sen!2sza!4v1749564637179!5m2!1sen!2sza"
-            width="450"
-            height="250"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            style="border: 0"
           ></iframe>
-        </div>
+        </section>
       </form>
     </section>
 
     <!--------------------------------------------------- Footer Page Section ---------------------------------------------->
     <section class="footer">
-      <!-- Column 1: Useful Links -->
+      <!-- Column 1: Contact Information -->
+      <div class="col-3">
+        <h3>Contact Us</h3>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          22 Hathaway Road,<br />
+          Gresswold, Johannesburg, 2018
+        </p>
+        <p>
+          <i class="fas fa-phone"></i>
+          +27 (0)11 786 8123
+        </p>
+        <p>
+          <i class="fas fa-phone"></i>
+          +27 (0)11 786 8124
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          admin@greswoldschool.co.za
+        </p>
+      </div>
+
+      <!-- Column 2: Useful Links -->
       <div class="col-1">
         <h3>Useful Links</h3>
         <ul>
@@ -534,7 +544,7 @@
         </ul>
       </div>
 
-      <!-- Column 2: Privacy and Developer Credit -->
+      <!-- Column 3: Privacy and Developer Credit -->
       <div class="col-2">
         <h3>Privacy Policy</h3>
         <p>
@@ -548,27 +558,6 @@
           >
             Mbali Sithebe
           </a>
-        </p>
-      </div>
-
-      <!-- Column 3: Contact Information -->
-      <div class="col-3">
-        <h3>Contact Us</h3>
-
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          22 Hathaway Road,<br />
-          Gresswold, Johannesburg, 2018
-        </p>
-
-        <p>
-          <i class="fas fa-phone"></i>
-          011 786 8123/4
-        </p>
-
-        <p>
-          <i class="fas fa-envelope"></i>
-          admin@greswoldschool.co.za
         </p>
       </div>
     </section>
