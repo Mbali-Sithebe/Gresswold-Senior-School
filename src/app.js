@@ -71,6 +71,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/////////////////////////////////// CURRICULUM CARDS FUNCTION ////////////////////////////////////
+
+document.querySelectorAll(".curriculum-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    if (window.innerWidth > 768) {
+      card.classList.toggle("show-info");
+    }
+    // else do nothing on small screens
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
 });

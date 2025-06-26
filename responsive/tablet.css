@@ -71,8 +71,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
-    /* Use transform to hide */
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
