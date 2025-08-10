@@ -138,7 +138,7 @@
     margin-top: 8px;
     padding: 3vh 6vw;
     max-width: 100%;
-    min-height: auto; 
+    min-height: auto;
     box-sizing: border-box;
   }
 
@@ -292,9 +292,9 @@
   }
 
   .curriculum-card {
-    position: static; 
+    position: static;
     max-width: 120px;
-    height: auto; 
+    height: auto;
     overflow: visible;
     box-shadow: none;
     border-radius: 8px;
@@ -306,14 +306,14 @@
     position: static;
     width: 100%;
     height: auto;
-    transform: none !important; 
+    transform: none !important;
     padding: 10px;
   }
 
   .card-face.face1 {
     background-size: cover;
     background-position: center;
-    height: 100px; 
+    height: 100px;
     border-radius: 8px 8px 0 0;
   }
 
@@ -528,7 +528,7 @@
   }
 
   .col-1 ul li {
-    margin-bottom: 2px; 
+    margin-bottom: 2px;
   }
 
   .col-1 ul li a {
@@ -557,8 +557,87 @@
   }
 }
 
-/*============= IPHONE SE CONTACT RESPONSIVE =============*/
+/*=== CURRICULUM CARDS RESPONSIVE (IPHONe SE & SIMILAR) ===*/
+@media screen and (max-width: 412px) {
+  .curriculum-cards-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+    justify-items: center;
+  }
 
+  .curriculum-card {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+  }
+
+  #curriculum h1 {
+    font-size: 1.1rem;
+  }
+
+  #curriculum h2 {
+    font-size: 0.9rem;
+  }
+
+  #curriculum p {
+    font-size: 0.65rem;
+  }
+
+  .card-face.face2 h3 {
+    font-size: 0.65rem;
+  }
+
+  .card-face.face2 ul {
+    font-size: 0.55rem;
+  }
+
+  @media screen and (max-width: 395px) {
+    #curriculum h1 {
+      font-size: 1.1rem;
+    }
+
+    #curriculum h2 {
+      font-size: 0.9rem;
+    }
+
+    #curriculum p {
+      font-size: 0.65rem;
+    }
+
+    .card-face.face2 h3 {
+      font-size: 0.65rem;
+    }
+
+    .card-face.face2 ul {
+      font-size: 0.55rem;
+    }
+  }
+}
+
+/*=== CURRICULUM CARDS RESPONSIVE (SMALLER SCREENS) ===*/
+@media screen and (max-width: 360px) {
+  #curriculum h1 {
+    font-size: 1rem; /* smaller than default */
+  }
+
+  #curriculum h2 {
+    font-size: 0.85rem;
+  }
+
+  #curriculum p {
+    font-size: 0.6rem;
+  }
+
+  .card-face.face2 h3 {
+    font-size: 0.6rem;
+  }
+
+  .card-face.face2 ul {
+    font-size: 0.5rem;
+  }
+}
+
+/*=== IPHONE SE CONTACT RESPONSIVE ===*/
 @media screen and (max-width: 380px) {
   .contact.info {
     grid-area: info;
@@ -575,23 +654,109 @@
     font-size: 0.6rem !important;
   }
 
-  /* Reduce gap between icon and text */
   .contact.info .iconBox {
     gap: 0.3rem;
     display: flex;
     align-items: center;
   }
 
-  /* Icon size and spacing */
   .contact.info .iconBox i {
     min-width: 15px;
     height: 15px;
     font-size: 0.5rem;
-    margin-right: 4px; /* small margin for spacing */
+    margin-right: 4px;
     border-radius: 50%;
   }
 
-  /* Remove extra margin on text */
+  .contact.info .iconBox p {
+    margin: 0;
+  }
+
+  .info .infoBox i {
+    margin: 0 !important;
+    margin-right: 0 !important;
+    gap: 0 !important;
+    min-width: 15px !important;
+    height: 15px !important;
+    font-size: 0.5rem !important;
+    border-radius: 50% !important;
+  }
+
+  .contact.map {
+    grid-area: map;
+    margin-top: -6px !important;
+    width: 100%;
+    height: 91%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: -12px !important;
+  }
+
+  .contact.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+
+  .resources h1 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    padding: 0 12px;
+  }
+
+  .resources p {
+    margin-top: -30px;
+    font-size: 0.75rem;
+    margin-left: 8px;
+    margin-right: 8px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .book-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 15px;
+  }
+
+  .book-icon i {
+    font-size: 3.5rem;
+  }
+}
+
+/*=== IPHONE SE CONTACT RESPONSIVE (SLIGHTLY LARGER) ===*/
+@media screen and (max-width: 380px) {
+  .contact.info {
+    grid-area: info;
+    width: 85%;
+    height: 100px;
+    padding: 15px;
+    font-size: 0.5rem;
+    margin-left: -8px;
+  }
+
+  .contact.info h3 {
+    margin-left: 0 !important;
+    margin-top: -5px !important;
+    font-size: 0.6rem !important;
+  }
+
+  .contact.info .iconBox {
+    gap: 0.3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact.info .iconBox i {
+    min-width: 15px;
+    height: 15px;
+    font-size: 0.5rem;
+    margin-right: 4px;
+    border-radius: 50%;
+  }
+
   .contact.info .iconBox p {
     margin: 0;
   }
@@ -652,5 +817,232 @@
 
   .book-icon i {
     font-size: 3.5rem;
+  }
+
+  /*========= CONTACT INFO  ==========*/
+  #contact {
+    padding: 2vh 2vw;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    min-height: 100vh;
+  }
+
+  #contact-form {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "form form"
+      "info map";
+    gap: 20px;
+  }
+
+  .contactUs h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  #contact-form h3 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .contact.form {
+    grid-area: form;
+    padding: 3px 8px;
+    width: 80%;
+    margin-left: 23px;
+  }
+
+  .formBox {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 30px;
+  }
+
+  .row50,
+  .row100 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .formBox .inputBox input,
+  .formBox .inputBox textarea {
+    font-size: 0.65rem;
+    padding: 3px 4px;
+  }
+
+  .formBox .inputBox label {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .row100 textarea {
+    min-height: 80px;
+    padding: 5px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  #message {
+    height: 17px !important;
+    font-size: 0.65rem;
+    padding: 2px;
+  }
+}
+
+/*=== CONTACT INFO FOR IPHONE 14 PRO MAX (430px) ===*/
+@media screen and (max-width: 435px) {
+  #contact {
+    padding: 2vh 2vw;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    min-height: 100vh;
+  }
+
+  #contact-form {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "form form"
+      "info map";
+    gap: 20px;
+  }
+
+  .contactUs h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  #contact-form h3 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .contact.form {
+    grid-area: form;
+    padding: 3px 8px;
+    width: 80%;
+    margin-left: 23px;
+  }
+
+  .formBox {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 30px;
+  }
+
+  .row50,
+  .row100 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .formBox .inputBox input,
+  .formBox .inputBox textarea {
+    font-size: 0.65rem;
+    padding: 3px 4px;
+  }
+
+  .formBox .inputBox label {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .row100 textarea {
+    min-height: 80px;
+    padding: 5px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  #message {
+    height: 17px !important;
+    font-size: 0.65rem;
+    padding: 2px;
+  }
+
+  /* Contact Info Section */
+  .contact.info {
+    grid-area: info;
+    width: 90%;
+    height: auto; /* Let height grow */
+    padding: 15px;
+    font-size: 0.58rem;
+    margin-left: 0; /* remove negative margin */
+  }
+
+  .contact.info h3 {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Info Box: icon + text aligned horizontally with small gap */
+  .contact.info .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact.info .iconBox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .contact.info .iconBox i {
+    min-width: 24px;
+    height: 24px;
+    font-size: 0.6rem;
+    border-radius: 50%;
+    background: #1e3ea8;
+    color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .contact.info .iconBox p {
+    margin: 0;
+    font-size: 0.65rem;
+  }
+
+  /* Contact Map */
+  .contact.map {
+    grid-area: map;
+    margin-top: 0 !important;
+    width: 100%;
+    height: 250px; /* fixed height for mobile */
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 0 !important;
+  }
+
+  .contact.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
   }
 }
