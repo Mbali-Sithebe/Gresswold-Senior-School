@@ -512,7 +512,7 @@ nav ul li a.nav-link.active::after {
 }
 
 strong {
-  color: #B38B00;
+  color: #b38b00;
 }
 
 #curriculum p {
@@ -559,25 +559,32 @@ strong {
 .card-face.face1 {
   background-size: cover;
   background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
   z-index: 1;
 }
-
 .card-face.face2 {
-  background-color: #ffffff;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
   transform: translateY(100%);
+  transition: 0.5s;
   z-index: 2;
   text-align: left;
 }
 
 .curriculum-card:hover .card-face.face1 {
   transform: translateY(-100%);
-  cursor: pointer;
 }
 
 .curriculum-card:hover .card-face.face2 {
   transform: translateY(0);
 }
-
 .card-face.face2 h3 {
   font-size: 1.1rem;
   color: #1e3ea8;
