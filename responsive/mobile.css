@@ -354,7 +354,8 @@
     margin-left: 8px;
     margin-right: 8px;
     line-height: 1.5em;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+    margin-top: -60px;
   }
 
   .book-icon {
@@ -362,6 +363,7 @@
     justify-content: center;
     margin-top: 0;
     margin-bottom: 15px;
+    margin-top: -90px;
   }
 
   .book-icon i {
@@ -379,7 +381,7 @@
   }
 
   .download-buttons {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 25px;
     gap: 12px;
   }
