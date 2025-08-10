@@ -534,8 +534,8 @@ strong {
 .curriculum-card {
   position: relative;
   width: 100%;
-  max-width: 350px;
-  height: 500px;
+  max-width: 366px;
+  height: 550px;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15);
