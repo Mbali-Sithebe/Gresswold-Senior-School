@@ -617,7 +617,7 @@
 /*=== CURRICULUM CARDS RESPONSIVE (SMALLER SCREENS) ===*/
 @media screen and (max-width: 360px) {
   #curriculum h1 {
-    font-size: 1rem; /* smaller than default */
+    font-size: 1rem;
   }
 
   #curriculum h2 {
@@ -638,265 +638,55 @@
 }
 
 /*=== IPHONE SE CONTACT RESPONSIVE ===*/
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 377px) {
   .contact.info {
-    grid-area: info;
-    width: 85%;
-    height: 100px;
-    padding: 15px;
-    font-size: 0.5rem;
-    margin-left: -8px;
-  }
-
-  .contact.info h3 {
+    height: 100px !important;
+    padding: 8px 10px !important;
+    font-size: 0.55rem !important;
+    overflow: hidden;
     margin-left: 0 !important;
-    margin-top: -5px !important;
-    font-size: 0.6rem !important;
-  }
-
-  .contact.info .iconBox {
-    gap: 0.3rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .contact.info .iconBox i {
-    min-width: 15px;
-    height: 15px;
-    font-size: 0.5rem;
-    margin-right: 4px;
-    border-radius: 50%;
-  }
-
-  .contact.info .iconBox p {
-    margin: 0;
-  }
-
-  .info .infoBox i {
-    margin: 0 !important;
-    margin-right: 0 !important;
-    gap: 0 !important;
-    min-width: 15px !important;
-    height: 15px !important;
-    font-size: 0.5rem !important;
-    border-radius: 50% !important;
-  }
-
-  .contact.map {
-    grid-area: map;
-    margin-top: -6px !important;
-    width: 100%;
-    height: 91%;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-left: -12px !important;
-  }
-
-  .contact.map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 8px;
-  }
-
-  .resources h1 {
-    font-size: 1.2rem;
-    margin-top: 5px;
-    padding: 0 12px;
-  }
-
-  .resources p {
-    margin-top: -30px;
-    font-size: 0.75rem;
-    margin-left: 8px;
-    margin-right: 8px;
-    line-height: 1.5em;
-    margin-bottom: 20px;
-  }
-
-  .book-icon {
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-    margin-bottom: 15px;
-  }
-
-  .book-icon i {
-    font-size: 3.5rem;
-  }
-}
-
-/*=== IPHONE SE CONTACT RESPONSIVE (SLIGHTLY LARGER) ===*/
-@media screen and (max-width: 380px) {
-  .contact.info {
-    grid-area: info;
-    width: 85%;
-    height: 100px;
-    padding: 15px;
-    font-size: 0.5rem;
-    margin-left: -8px;
-  }
-
-  .contact.info h3 {
-    margin-left: 0 !important;
-    margin-top: -5px !important;
-    font-size: 0.6rem !important;
-  }
-
-  .contact.info .iconBox {
-    gap: 0.3rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .contact.info .iconBox i {
-    min-width: 15px;
-    height: 15px;
-    font-size: 0.5rem;
-    margin-right: 4px;
-    border-radius: 50%;
-  }
-
-  .contact.info .iconBox p {
-    margin: 0;
-  }
-
-  /* OPTIONAL: Remove any global conflicting styles */
-  .info .infoBox i {
-    margin: 0 !important;
-    margin-right: 0 !important;
-    gap: 0 !important;
-    min-width: 15px !important;
-    height: 15px !important;
-    font-size: 0.5rem !important;
-    border-radius: 50% !important;
-  }
-
-  /*========= CONTACT MAP  ==========*/
-  .contact.map {
-    grid-area: map;
-    margin-top: -6px !important;
-    width: 100%;
-    height: 91%;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-left: -12px !important;
-  }
-
-  .contact.map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 8px;
-  }
-
-  /*========= School Resources Page ==========*/
-  .resources h1 {
-    font-size: 1.2rem;
-    margin-top: 5px;
-    padding: 0 12px;
-  }
-
-  .resources p {
-    margin-top: 0;
-    font-size: 0.75rem;
-    margin-left: 8px;
-    margin-right: 8px;
-    line-height: 1.5em;
-    margin-bottom: 20px;
-    margin-top: -30px;
-  }
-
-  .book-icon {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 15px;
-    margin-top: -50px;
-  }
-
-  .book-icon i {
-    font-size: 3.5rem;
-  }
-
-  /*========= CONTACT INFO  ==========*/
-  #contact {
-    padding: 2vh 2vw;
-    box-sizing: border-box;
-    padding-bottom: 50px;
-    padding-right: 5px;
-    min-height: 100vh;
-  }
-
-  #contact-form {
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "form form"
-      "info map";
-    gap: 20px;
-  }
-
-  .contactUs h1 {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 5px;
-  }
-
-  #contact-form h3 {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-top: 15px;
-  }
-
-  .contact.form {
-    grid-area: form;
-    padding: 3px 8px;
-    width: 80%;
-    margin-left: 23px;
-  }
-
-  .formBox {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-    margin-left: 30px;
-  }
-
-  .row50,
-  .row100 {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0;
-    margin-bottom: 0;
+    justify-content: center;
+    gap: 4px;
   }
 
-  .formBox .inputBox input,
-  .formBox .inputBox textarea {
-    font-size: 0.65rem;
-    padding: 3px 4px;
+  .contact.info h3 {
+    font-size: 0.4rem !important;
+    margin: 0 !important;
   }
 
-  .formBox .inputBox label {
-    font-size: 0.7rem;
-    margin-bottom: 0;
+  .contact.info .iconBox {
+    gap: 4px !important;
+    display: flex;
+    align-items: center;
   }
 
-  .row100 textarea {
-    min-height: 80px;
-    padding: 5px;
-    resize: none;
-    box-sizing: border-box;
+  .contact.info .iconBox i {
+    min-width: 16px !important;
+    height: 16px !important;
+    font-size: 0.5rem !important;
+    margin-right: 6px !important;
+    border-radius: 50%;
   }
 
-  #message {
-    height: 17px !important;
-    font-size: 0.65rem;
-    padding: 2px;
+  .contact.info .iconBox p {
+    margin: 0 !important;
+    font-size: 0.53rem !important;
+  }
+
+  .contact.map {
+    height: 125px !important;
+    padding: 5px !important;
+    margin-left: 0 !important;
+    overflow: hidden;
+  }
+
+  .contact.map iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 8px;
+    margin-top: -5px;
   }
 }
 
@@ -985,10 +775,10 @@
   .contact.info {
     grid-area: info;
     width: 90%;
-    height: auto; 
+    height: auto;
     padding: 15px;
     font-size: 0.58rem;
-    margin-left: 0; 
+    margin-left: 0;
   }
 
   .contact.info h3 {
@@ -997,7 +787,6 @@
     font-size: 0.8rem !important;
   }
 
- 
   .contact.info .infoBox {
     display: flex;
     flex-direction: column;
@@ -1033,7 +822,7 @@
     grid-area: map;
     margin-top: 0 !important;
     width: 100%;
-    height: 250px; 
+    height: 250px;
     padding: 5px;
     box-sizing: border-box;
     margin-left: 0 !important;
@@ -1046,38 +835,35 @@
     border-radius: 8px;
   }
 
-  /* ======== cariculum cards ========= */
-  
+  /* Curriculum Cards */
   .curriculum-cards-container {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 12px;
     justify-items: center;
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box;
   }
 
- 
   .curriculum-card {
-    display: block; 
+    display: block;
     max-width: 130px;
     width: 100%;
-    height: auto; 
+    height: auto;
     overflow: visible;
     box-shadow: none;
     border-radius: 8px;
     cursor: default;
   }
 
- 
   .card-face.face1,
   .card-face.face2 {
-    position: static !important; 
+    position: static !important;
     width: 100%;
     height: auto;
-    transform: none !important; 
+    transform: none !important;
     padding: 10px;
-    display: block; 
+    display: block;
   }
 
   .card-face.face1 {
@@ -1093,10 +879,10 @@
     padding: 10px 8px;
   }
 
-  /* ======== Hamburger ======= */
+  /* Hamburger */
   .hamburger-menu {
     display: block;
-    position: fixed; 
+    position: fixed;
     top: 25px;
     right: 25px;
     z-index: 1100;
@@ -1108,7 +894,7 @@
     display: inline-block;
     font-size: 20px;
     font-weight: 800;
-    color: #b38b00; 
+    color: #b38b00;
   }
 
   .school-logo {
